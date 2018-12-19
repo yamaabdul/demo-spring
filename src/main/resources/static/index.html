@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+function calculate() {
+  var y = document.getElementById("firstname").value;
+  var z = document.getElementById("secondname").value;
+  var x = Number(y) + Number(z);
+  document.getElementById("demo").innerHTML = x;
+}
+
+</script>
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<div class="card">
+    <img src="yama.jpg" alt="John" style="width:100%">
+    <h1>Yama Rahim</h1>
+    Insert first number:<br>
+    <input type="text" id="firstname" name="firstname"><br>
+    Insert second number:<br>
+    <input type="text" id="secondname" name="second"><br>
+    <!--<p id="demo"></p><br>-->
+
+    <p class="title">Software Engineer Capgemini</p>
+    <p>High school Amsterdam</p>
+    <a href="https://www.dribbble.com"><i class="fa fa-dribbble"></i></a>
+    <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+    <p><button onclick="calculate()" id="demo">Calculate</button></p>
+</div>
+
+</body>
+</html>
